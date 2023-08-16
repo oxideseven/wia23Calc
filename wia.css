@@ -1,0 +1,95 @@
+/* GLOBAL STUFF */
+:root {
+    --light1: #ebebeb;
+    --light2: #fff;
+    --dark1: #2a2424;
+    --dark1L: #473d3d;
+    --dark1L-hover:#3d3434;
+    --dark1L-active:#584b4b;
+    --dark2: #0d0d0d;
+    --aem-purple: #8018c4;
+    --aem-green: #04AA6D;
+    --aem-yellow: #da9600;
+}
+
+@font-face {
+    font-family: system;
+    src: local(".SFNS-Light"), local(".SFNSText-Light"), local(".HelveticaNeueDeskInterface-Light"), local(".LucidaGrandeUI"), local("Segoe UI Light"), local("Ubuntu Light"), local("Roboto-Light"), local("DroidSans"), local("Tahoma");
+}
+  
+  /* Now, let's apply it on an element */
+  body {
+    font-family: "system";
+  }
+
+/* poopy CSS "reset" */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+    font-size: 62.5%;
+}
+  
+header {
+    background-color: var(--dark2);
+    color: var(--aem-yellow);
+}
+
+body {
+    background-color: var(--dark1);
+    color: var(--light1);
+    font-family: "system";
+    line-height: 1.6;
+    font-size: 1.6rem;
+}
+
+/* HEADER */
+
+/* MAIN */
+
+
+
+/* FOOTER */
+
+footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 10px;
+    gap: 10px;
+    background-color: var(--dark2);
+    color: var(--light1);
+    font-size: 12px;
+}
+
+.ion-github {
+    color: var(--aem-purple);
+    font-size: 24px;
+}
+  
+.ion-github:hover {
+    animation: skew 0.2s;
+    animation-direction: alternate;
+    animation-iteration-count: 2;
+    transform: scale(1.2);
+}
+
+@keyframes skew {
+    0% {
+        transform: skew(20deg, 20deg);
+    }
+    100% {
+        transform: skew(-20deg, -20deg);
+    }
+}
