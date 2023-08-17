@@ -1,0 +1,71 @@
+main{
+    display: flex;
+    justify-content: center;
+}
+
+h1{
+    text-align: center;
+}
+
+#calcScreen{
+    width: 256px;
+    height: 80px;
+    padding: 4px;
+    background-color: black;
+    text-align: right;
+}
+
+#displayOutput{
+    font-size: 16px;
+}
+
+#resultOutput{
+    font-size: 32px;
+    font-weight: bold;
+    margin: 4px;
+}
+
+button{
+    font-size: 48px;
+    width: 64px;
+    height: 64px;
+    border-style: none;
+}
+
+button:hover{
+    filter: brightness(125%);
+}
+
+#clearButton{
+    width: 128px;
+}
+
+#calcContainer{
+    margin: 32px;
+}
+
+#buttons{
+    display: flex;
+    flex-wrap: wrap;
+    width: 256px;
+}
+
+.numButton{
+    background-color: var(--dark1L);
+}
+
+.opButton, #equalButton{
+    background-color: var(--aem-yellow);
+}
+
+#decButton, #negButton{
+    background-color: grey;
+}
+
+#clearButton{
+    background-color: var(--aem-purple);
+}
+
+#backButton{
+    background-color: var(--aem-green);
+}
